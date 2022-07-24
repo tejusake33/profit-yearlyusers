@@ -8,6 +8,11 @@ body{
   justify-content: center;
   margin-top: 10px;
   }
+  .buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
 .input-holder{
     display: flex;
     gap: 1px; 
@@ -128,27 +133,33 @@ text-align: center;
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
   }
 
- @media only screen and (max-width: 400px) {
-  .input-holder{
-    display: block;
-    gap: 10px;
+  @media screen and (max-width: 600px) {
+    .input-holder{
+      display: block;
+    }
+    .card2{
+      display: none;
+    }
+    .card{
+      width: 550px;
+    }
+    .revenue{
+      margin-left: 30px;
+      box-shadow: none
+    }
+    .costs{
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+    .buttonContainer{
+      margin-left: 160px;
+    }
+    .graph{
+      display: block;
+      width: 600px;
+      height: 300px;
+      margin-left: 180px;
+      margin-top: 10px;
+    }
+
   }
-  .card2{
-    display: none;
-  }
-  h1{
-    font-size: small;
-  }
-     .card{
-      width: 400px;
-      padding: 10px;
-     }
-   
-     .results{
-         margin-top: 10px;
-     }
-     .chart{
-         margin-top: 10px;
-         display: block;
-     }
- }
